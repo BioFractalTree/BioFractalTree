@@ -1,0 +1,22 @@
+To install BioFractalTree:
+ 
+ - dependencies: c++ compiler with c++11 and clang support
+ 
+Recommended install procedure:
+
+git clone https://github.com/BioFractalTree/BioFractalTree.git BioFractalTree
+cd BioFractalTree
+mkdir build && cd build
+cmake ..
+make
+
+executable will, by default, be located in the build/bin folder
+
+you can set a custom install path with
+cmake --prefix=/install/path
+make install
+
+or just
+sudo make install 
+to place the executable into /usr/bin
+
